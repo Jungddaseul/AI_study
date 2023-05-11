@@ -1,4 +1,4 @@
-## ✏️ Data_visualization
+## ✏️ Data_Analysis
 
 > #### 01 pandas ➖ 해당저장소로 👉 [이동하기](https://github.com/Jungddaseul/AI_study/tree/main/01_Pandas)
 > #### 02 numpy ➖ 해당저장소로 👉 [이동하기](https://github.com/Jungddaseul/AI_study/tree/main/02_Numpy)
