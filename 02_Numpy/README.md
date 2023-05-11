@@ -18,4 +18,4 @@
 >   pip install numpy
 
 ### 2. 넘파이 문법
-> ndarray, 인덱싱, 슬라이싱, 배열 반복, 부울연산 관련 실습코드 [이동하기](./02_Numpy/1_numpy.ipynb)
+> ndarray, 인덱싱, 슬라이싱, 배열 반복, 부울연산 관련 실습코드 [이동하기](./1_numpy.ipynb)
