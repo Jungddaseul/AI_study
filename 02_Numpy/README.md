@@ -6,13 +6,17 @@
 ### 1. 넘파이 설치
 - 일반적으로 파이썬을 설치할 때 기본패키지로 함께 설치된다.
 > ● On Linux (Ubuntu and Debian)
+> 
 >   sudo apt-get install python-numpy
+>   
 > ● On Linux (Fedora)
 >   sudo yum install numpy scipy
+>   
 > ● On Windows with Anaconda
 >   conda install numpy
+>   
 > ● Vscode
 >   pip install numpy
 
 ### 2. 넘파이 문법
-> ndarray, 인덱싱, 슬라이싱, 배열 반복, 부울연산 관련 실습코드 [이동하기](./01_numpy.ipynb)
+> ndarray, 인덱싱, 슬라이싱, 배열 반복, 부울연산 관련 실습코드 [이동하기](./02_Numpy/1_numpy.ipynb)
