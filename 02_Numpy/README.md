@@ -8,14 +8,14 @@
 > **● On Linux (Ubuntu and Debian)**
 > sudo apt-get install python-numpy
 >   
->** ● On Linux (Fedora)**
+> **● On Linux (Fedora)**
 >   sudo yum install numpy scipy
 >   
->** ● On Windows with Anaconda**
+> **● On Windows with Anaconda**
 >   conda install numpy
 >   
->** ● Vscode**
+> **● Vscode**
 >   pip install numpy
 
 ### 2. 넘파이 문법
-> ndarray, 인덱싱, 슬라이싱, 배열 반복, 부울연산 관련 실습코드 [이동하기](./1_numpy.ipynb)
+> ndarray, 인덱싱, 슬라이싱, 배열 반복, 부울연산 관련 실습코드 👉 [이동하기](./1_numpy.ipynb)
