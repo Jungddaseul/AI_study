@@ -30,4 +30,4 @@
 > ■ vscode : pip install pandas
 
 ### 3. 판다스 문법
-■ Series 활용 (Series 연산, 딕셔너리 자료형, isnull(), notnull(), unique(), value_counts()..) 👉[코드확인](./01_pands(Series.ipynb)
+■ Series 활용 (Series 연산, 딕셔너리 자료형, isnull(), notnull(), unique(), value_counts()..) 👉[코드확인](./01_pands(Series).ipynb)
