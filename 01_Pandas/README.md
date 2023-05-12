@@ -32,6 +32,8 @@
 ### 3. 판다스 문법
 <img width="588" alt="image" src="https://github.com/Jungddaseul/AI_study/assets/114555218/d06651ea-72a8-438c-add8-b6e476ddfb52">
 
-■ Series 활용 (Series 연산, 딕셔너리 자료형, isnull(), notnull(), unique(), value_counts()..) 👉[코드확인](./01_pandas(Series).ipynb)
-
-■ DataFrame 활용 (DateFrame 연산, sort_index(), sort_values(), rank(), drop(), del, loc..) 👉[코드확인](02_pandas(DataFrame).ipynb)
+#### ■ Series 활용 (Series 연산, 딕셔너리 자료형, isnull(), notnull(), unique(), value_counts()..) 👉[코드확인](./01_pandas(Series).ipynb)
+#### ■ DataFrame 활용 (DateFrame 연산, sort_index(), sort_values(), rank(), drop(), del, loc..) 👉[코드확인](02_pandas(DataFrame).ipynb)
+#### ■ pandas를 활용하여 탐색적 데이터 분석(EDA실습) 실습코드 👉 [코드확인](./03_pandas_EDA.ipynb)
+  > 미국 역대 대통령 신장 데이터 분석
+  > 파일명 : president_heights.csv
