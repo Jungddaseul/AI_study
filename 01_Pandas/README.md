@@ -30,4 +30,8 @@
 > ■ vscode : pip install pandas
 
 ### 3. 판다스 문법
+<img width="588" alt="image" src="https://github.com/Jungddaseul/AI_study/assets/114555218/d06651ea-72a8-438c-add8-b6e476ddfb52">
+
 ■ Series 활용 (Series 연산, 딕셔너리 자료형, isnull(), notnull(), unique(), value_counts()..) 👉[코드확인](./01_pandas(Series).ipynb)
+
+■ DataFrame 활용 (DateFrame 연산, sort_index(), sort_values(), rank(), drop(), del, loc..) 👉[코드확인](02_pandas(DataFrame).ipynb)
