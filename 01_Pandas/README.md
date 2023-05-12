@@ -8,16 +8,25 @@
 - 시리즈와 데이터 프레임이라는 새로운 데이터 구조의 ㅐ발은 관계형데이터베이스나 스프레드시트 등의 데이터와도 함께 동작할 수 있다.
 - <특징>
 > ■ Numpy 기반으로 개발되어 고속으로 데이터 분석가능
+> 
 > ■ 명시적으로 라벨에 따라 데이터 정렬 가능한 자료구조
+> 
 > ■ DataFrame에 열을 추가 삭제 가능한 자료구조의 크기 가변성
+> 
 > ■ python, numpy 등 타 자료구조를 DataFrame으로 쉽게 변환 가능
+> 
 > ■ 통합된 Time Series(시계열) 분석 기능
+> 
 > ■ 누락된 데이터를 유연하게 처리할 수 있는 기능
+> 
 
 ## 2. 판다스 설치
 > ■ 리눅스 : (Ubuntu and Debian) sudo apt-get install pyhon-pandas
+> 
 > ■ 리눅스 : (Fedora) sudo yum install pandas scipy
+> 
 > ■ 아나콘다(윈도우) : conda install pandas
+> 
 > ■ vscode : pip install pandas
 
 ## 3. 판다스 문법
