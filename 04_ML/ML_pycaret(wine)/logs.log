@@ -1,0 +1,2031 @@
+2023-05-27 05:55:35,477:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-27 05:55:35,477:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-27 05:55:35,477:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-27 05:55:35,477:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-27 05:55:36,438:INFO:Soft dependency imported: prophet: 1.1.3
+2023-05-27 05:56:39,852:INFO:PyCaret ClassificationExperiment
+2023-05-27 05:56:39,852:INFO:Logging name: clf-default-name
+2023-05-27 05:56:39,852:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-05-27 05:56:39,853:INFO:version 3.0.2
+2023-05-27 05:56:39,853:INFO:Initializing setup()
+2023-05-27 05:56:39,853:INFO:self.USI: a3df
+2023-05-27 05:56:39,853:INFO:self._variable_keys: {'y_test', 'target_param', 'memory', 'fold_generator', 'USI', '_ml_usecase', 'n_jobs_param', 'gpu_param', 'data', 'y', 'pipeline', 'fix_imbalance', '_available_plots', 'exp_id', 'idx', 'is_multiclass', 'y_train', 'exp_name_log', 'fold_groups_param', 'logging_param', 'gpu_n_jobs_param', 'log_plots_param', 'X_test', 'html_param', 'X', 'fold_shuffle_param', 'seed', 'X_train'}
+2023-05-27 05:56:39,853:INFO:Checking environment
+2023-05-27 05:56:39,853:INFO:python_version: 3.10.11
+2023-05-27 05:56:39,853:INFO:python_build: ('main', 'Apr  5 2023 14:15:10')
+2023-05-27 05:56:39,853:INFO:machine: x86_64
+2023-05-27 05:56:39,853:INFO:platform: Linux-5.15.107+-x86_64-with-glibc2.31
+2023-05-27 05:56:39,853:INFO:Memory: svmem(total=13613326336, available=12268756992, percent=9.9, used=1007439872, free=5454204928, active=666972160, inactive=7144005632, buffers=352260096, cached=6799421440, shared=3899392, slab=245985280)
+2023-05-27 05:56:39,853:INFO:Physical Core: 1
+2023-05-27 05:56:39,854:INFO:Logical Core: 2
+2023-05-27 05:56:39,854:INFO:Checking libraries
+2023-05-27 05:56:39,854:INFO:System:
+2023-05-27 05:56:39,854:INFO:    python: 3.10.11 (main, Apr  5 2023, 14:15:10) [GCC 9.4.0]
+2023-05-27 05:56:39,854:INFO:executable: /usr/bin/python3
+2023-05-27 05:56:39,854:INFO:   machine: Linux-5.15.107+-x86_64-with-glibc2.31
+2023-05-27 05:56:39,854:INFO:PyCaret required dependencies:
+2023-05-27 05:56:39,854:INFO:                 pip: 23.1.2
+2023-05-27 05:56:39,854:INFO:          setuptools: 67.7.2
+2023-05-27 05:56:39,854:INFO:             pycaret: 3.0.2
+2023-05-27 05:56:39,854:INFO:             IPython: 7.34.0
+2023-05-27 05:56:39,854:INFO:          ipywidgets: 7.7.1
+2023-05-27 05:56:39,854:INFO:                tqdm: 4.65.0
+2023-05-27 05:56:39,854:INFO:               numpy: 1.22.4
+2023-05-27 05:56:39,854:INFO:              pandas: 1.5.3
+2023-05-27 05:56:39,854:INFO:              jinja2: 3.1.2
+2023-05-27 05:56:39,854:INFO:               scipy: 1.10.1
+2023-05-27 05:56:39,854:INFO:              joblib: 1.2.0
+2023-05-27 05:56:39,854:INFO:             sklearn: 1.2.2
+2023-05-27 05:56:39,854:INFO:                pyod: 1.0.9
+2023-05-27 05:56:39,854:INFO:            imblearn: 0.10.1
+2023-05-27 05:56:39,854:INFO:   category_encoders: 2.6.1
+2023-05-27 05:56:39,854:INFO:            lightgbm: 3.3.5
+2023-05-27 05:56:39,854:INFO:               numba: 0.56.4
+2023-05-27 05:56:39,854:INFO:            requests: 2.27.1
+2023-05-27 05:56:39,854:INFO:          matplotlib: 3.7.1
+2023-05-27 05:56:39,854:INFO:          scikitplot: 0.3.7
+2023-05-27 05:56:39,854:INFO:         yellowbrick: 1.5
+2023-05-27 05:56:39,854:INFO:              plotly: 5.13.1
+2023-05-27 05:56:39,854:INFO:             kaleido: 0.2.1
+2023-05-27 05:56:39,854:INFO:         statsmodels: 0.13.5
+2023-05-27 05:56:39,855:INFO:              sktime: 0.17.0
+2023-05-27 05:56:39,855:INFO:               tbats: 1.1.3
+2023-05-27 05:56:39,855:INFO:            pmdarima: 2.0.3
+2023-05-27 05:56:39,855:INFO:              psutil: 5.9.5
+2023-05-27 05:56:39,855:INFO:PyCaret optional dependencies:
+2023-05-27 05:56:40,048:INFO:                shap: Not installed
+2023-05-27 05:56:40,048:INFO:           interpret: Not installed
+2023-05-27 05:56:40,048:INFO:                umap: Not installed
+2023-05-27 05:56:40,049:INFO:    pandas_profiling: Not installed
+2023-05-27 05:56:40,049:INFO:  explainerdashboard: Not installed
+2023-05-27 05:56:40,049:INFO:             autoviz: Not installed
+2023-05-27 05:56:40,049:INFO:           fairlearn: Not installed
+2023-05-27 05:56:40,049:INFO:             xgboost: 1.7.5
+2023-05-27 05:56:40,049:INFO:            catboost: 1.2
+2023-05-27 05:56:40,049:INFO:              kmodes: Not installed
+2023-05-27 05:56:40,049:INFO:             mlxtend: 0.14.0
+2023-05-27 05:56:40,049:INFO:       statsforecast: Not installed
+2023-05-27 05:56:40,049:INFO:        tune_sklearn: Not installed
+2023-05-27 05:56:40,049:INFO:                 ray: Not installed
+2023-05-27 05:56:40,049:INFO:            hyperopt: 0.2.7
+2023-05-27 05:56:40,049:INFO:              optuna: Not installed
+2023-05-27 05:56:40,049:INFO:               skopt: Not installed
+2023-05-27 05:56:40,049:INFO:              mlflow: Not installed
+2023-05-27 05:56:40,049:INFO:              gradio: Not installed
+2023-05-27 05:56:40,049:INFO:             fastapi: Not installed
+2023-05-27 05:56:40,049:INFO:             uvicorn: Not installed
+2023-05-27 05:56:40,049:INFO:              m2cgen: Not installed
+2023-05-27 05:56:40,049:INFO:           evidently: Not installed
+2023-05-27 05:56:40,049:INFO:               fugue: Not installed
+2023-05-27 05:56:40,049:INFO:           streamlit: Not installed
+2023-05-27 05:56:40,049:INFO:             prophet: 1.1.3
+2023-05-27 05:56:40,049:INFO:None
+2023-05-27 05:56:40,049:INFO:Set up data.
+2023-05-27 05:56:40,058:INFO:Set up train/test split.
+2023-05-27 05:56:40,065:INFO:Set up index.
+2023-05-27 05:56:40,065:INFO:Set up folding strategy.
+2023-05-27 05:56:40,065:INFO:Assigning column types.
+2023-05-27 05:56:40,069:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-05-27 05:56:40,119:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-05-27 05:56:40,123:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-05-27 05:56:40,185:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-05-27 05:56:40,192:INFO:Soft dependency imported: catboost: 1.2
+2023-05-27 05:56:40,336:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-05-27 05:56:40,337:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-05-27 05:56:40,415:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-05-27 05:56:40,426:INFO:Soft dependency imported: catboost: 1.2
+2023-05-27 05:56:40,428:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-05-27 05:56:40,562:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-05-27 05:56:40,626:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-05-27 05:56:40,631:INFO:Soft dependency imported: catboost: 1.2
+2023-05-27 05:56:40,734:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-05-27 05:56:40,783:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-05-27 05:56:40,790:INFO:Soft dependency imported: catboost: 1.2
+2023-05-27 05:56:40,793:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-05-27 05:56:41,073:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-05-27 05:56:41,085:INFO:Soft dependency imported: catboost: 1.2
+2023-05-27 05:56:41,296:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-05-27 05:56:41,300:INFO:Soft dependency imported: catboost: 1.2
+2023-05-27 05:56:41,302:INFO:Preparing preprocessing pipeline...
+2023-05-27 05:56:41,304:INFO:Set up label encoding.
+2023-05-27 05:56:41,304:INFO:Set up simple imputation.
+2023-05-27 05:56:41,308:INFO:Set up encoding of ordinal features.
+2023-05-27 05:56:41,310:INFO:Set up encoding of categorical features.
+2023-05-27 05:56:41,311:INFO:Set up column name cleaning.
+2023-05-27 05:56:41,472:INFO:Finished creating preprocessing pipeline.
+2023-05-27 05:56:41,519:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                                    transformer=OrdinalEncoder(cols=['type'],
+                                                               drop_invariant=False,
+                                                               handle_missing='return_nan',
+                                                               handle_unknown='value',
+                                                               mapping=[{'col': 'type',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': red      0
+white    1
+NaN     -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2023-05-27 05:56:41,520:INFO:Creating final display dataframe.
+2023-05-27 05:56:42,122:INFO:Setup _display_container:                     Description                                     Value
+0                    Session id                                      1620
+1                        Target                                   quality
+2                   Target type                                Multiclass
+3                Target mapping  3: 0, 4: 1, 5: 2, 6: 3, 7: 4, 8: 5, 9: 6
+4           Original data shape                                (6497, 13)
+5        Transformed data shape                                (6497, 13)
+6   Transformed train set shape                                (4547, 13)
+7    Transformed test set shape                                (1950, 13)
+8              Ordinal features                                         1
+9              Numeric features                                        11
+10         Categorical features                                         1
+11                   Preprocess                                      True
+12              Imputation type                                    simple
+13           Numeric imputation                                      mean
+14       Categorical imputation                                      mode
+15     Maximum one-hot encoding                                        25
+16              Encoding method                                      None
+17               Fold Generator                           StratifiedKFold
+18                  Fold Number                                         3
+19                     CPU Jobs                                        -1
+20                      Use GPU                                     False
+21               Log Experiment                                     False
+22              Experiment Name                          clf-default-name
+23                          USI                                      a3df
+2023-05-27 05:56:42,506:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-05-27 05:56:42,518:INFO:Soft dependency imported: catboost: 1.2
+2023-05-27 05:56:42,789:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-05-27 05:56:42,793:INFO:Soft dependency imported: catboost: 1.2
+2023-05-27 05:56:42,794:INFO:setup() successfully completed in 2.94s...............
+2023-05-27 06:00:19,545:INFO:Initializing compare_models()
+2023-05-27 06:00:19,545:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, include=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2023-05-27 06:00:19,545:INFO:Checking exceptions
+2023-05-27 06:00:19,555:INFO:Preparing display monitor
+2023-05-27 06:00:19,604:INFO:Initializing Logistic Regression
+2023-05-27 06:00:19,604:INFO:Total runtime is 2.7418136596679688e-06 minutes
+2023-05-27 06:00:19,610:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:00:19,611:INFO:Initializing create_model()
+2023-05-27 06:00:19,611:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=lr, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:00:19,611:INFO:Checking exceptions
+2023-05-27 06:00:19,611:INFO:Importing libraries
+2023-05-27 06:00:19,611:INFO:Copying training dataset
+2023-05-27 06:00:19,619:INFO:Defining folds
+2023-05-27 06:00:19,619:INFO:Declaring metric variables
+2023-05-27 06:00:19,625:INFO:Importing untrained model
+2023-05-27 06:00:19,640:INFO:Logistic Regression Imported successfully
+2023-05-27 06:00:19,648:INFO:Starting cross validation
+2023-05-27 06:00:19,650:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:00:24,231:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_logistic.py:458: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-27 06:00:24,460:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:24,469:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:24,472:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:24,473:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:24,522:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_logistic.py:458: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-27 06:00:24,710:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:24,713:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:24,721:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:24,722:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:26,050:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_logistic.py:458: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-05-27 06:00:26,195:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:26,198:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:26,200:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:26,201:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:26,209:INFO:Calculating mean and std
+2023-05-27 06:00:26,212:INFO:Creating metrics dataframe
+2023-05-27 06:00:26,222:INFO:Uploading results into container
+2023-05-27 06:00:26,223:INFO:Uploading model into container now
+2023-05-27 06:00:26,223:INFO:_master_model_container: 1
+2023-05-27 06:00:26,223:INFO:_display_container: 2
+2023-05-27 06:00:26,224:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=1620, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-05-27 06:00:26,224:INFO:create_model() successfully completed......................................
+2023-05-27 06:00:26,459:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:00:26,460:INFO:Creating metrics dataframe
+2023-05-27 06:00:26,471:INFO:Initializing K Neighbors Classifier
+2023-05-27 06:00:26,471:INFO:Total runtime is 0.11444280942281088 minutes
+2023-05-27 06:00:26,476:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:00:26,476:INFO:Initializing create_model()
+2023-05-27 06:00:26,476:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=knn, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:00:26,476:INFO:Checking exceptions
+2023-05-27 06:00:26,476:INFO:Importing libraries
+2023-05-27 06:00:26,476:INFO:Copying training dataset
+2023-05-27 06:00:26,484:INFO:Defining folds
+2023-05-27 06:00:26,484:INFO:Declaring metric variables
+2023-05-27 06:00:26,490:INFO:Importing untrained model
+2023-05-27 06:00:26,495:INFO:K Neighbors Classifier Imported successfully
+2023-05-27 06:00:26,505:INFO:Starting cross validation
+2023-05-27 06:00:26,506:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:00:26,835:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:26,838:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:26,839:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:26,841:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:26,871:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:26,874:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:26,876:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:26,877:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:27,128:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:27,131:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:27,133:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:27,134:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:27,142:INFO:Calculating mean and std
+2023-05-27 06:00:27,145:INFO:Creating metrics dataframe
+2023-05-27 06:00:27,165:INFO:Uploading results into container
+2023-05-27 06:00:27,166:INFO:Uploading model into container now
+2023-05-27 06:00:27,166:INFO:_master_model_container: 2
+2023-05-27 06:00:27,166:INFO:_display_container: 2
+2023-05-27 06:00:27,167:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2023-05-27 06:00:27,167:INFO:create_model() successfully completed......................................
+2023-05-27 06:00:27,301:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:00:27,302:INFO:Creating metrics dataframe
+2023-05-27 06:00:27,312:INFO:Initializing Naive Bayes
+2023-05-27 06:00:27,313:INFO:Total runtime is 0.1284714420636495 minutes
+2023-05-27 06:00:27,320:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:00:27,320:INFO:Initializing create_model()
+2023-05-27 06:00:27,320:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=nb, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:00:27,320:INFO:Checking exceptions
+2023-05-27 06:00:27,320:INFO:Importing libraries
+2023-05-27 06:00:27,321:INFO:Copying training dataset
+2023-05-27 06:00:27,326:INFO:Defining folds
+2023-05-27 06:00:27,326:INFO:Declaring metric variables
+2023-05-27 06:00:27,331:INFO:Importing untrained model
+2023-05-27 06:00:27,336:INFO:Naive Bayes Imported successfully
+2023-05-27 06:00:27,344:INFO:Starting cross validation
+2023-05-27 06:00:27,345:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:00:27,541:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:27,544:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:27,547:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:27,556:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:27,559:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:27,562:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:27,724:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:27,727:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:27,728:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:27,734:INFO:Calculating mean and std
+2023-05-27 06:00:27,735:INFO:Creating metrics dataframe
+2023-05-27 06:00:27,742:INFO:Uploading results into container
+2023-05-27 06:00:27,742:INFO:Uploading model into container now
+2023-05-27 06:00:27,743:INFO:_master_model_container: 3
+2023-05-27 06:00:27,743:INFO:_display_container: 2
+2023-05-27 06:00:27,743:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2023-05-27 06:00:27,743:INFO:create_model() successfully completed......................................
+2023-05-27 06:00:27,880:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:00:27,880:INFO:Creating metrics dataframe
+2023-05-27 06:00:27,890:INFO:Initializing Decision Tree Classifier
+2023-05-27 06:00:27,890:INFO:Total runtime is 0.13809431393941243 minutes
+2023-05-27 06:00:27,894:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:00:27,894:INFO:Initializing create_model()
+2023-05-27 06:00:27,894:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=dt, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:00:27,894:INFO:Checking exceptions
+2023-05-27 06:00:27,894:INFO:Importing libraries
+2023-05-27 06:00:27,894:INFO:Copying training dataset
+2023-05-27 06:00:27,903:INFO:Defining folds
+2023-05-27 06:00:27,903:INFO:Declaring metric variables
+2023-05-27 06:00:27,909:INFO:Importing untrained model
+2023-05-27 06:00:27,913:INFO:Decision Tree Classifier Imported successfully
+2023-05-27 06:00:27,922:INFO:Starting cross validation
+2023-05-27 06:00:27,923:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:00:28,150:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,153:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,153:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,155:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,155:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,158:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,298:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,300:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,302:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,307:INFO:Calculating mean and std
+2023-05-27 06:00:28,308:INFO:Creating metrics dataframe
+2023-05-27 06:00:28,315:INFO:Uploading results into container
+2023-05-27 06:00:28,316:INFO:Uploading model into container now
+2023-05-27 06:00:28,316:INFO:_master_model_container: 4
+2023-05-27 06:00:28,316:INFO:_display_container: 2
+2023-05-27 06:00:28,317:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=1620, splitter='best')
+2023-05-27 06:00:28,317:INFO:create_model() successfully completed......................................
+2023-05-27 06:00:28,432:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:00:28,432:INFO:Creating metrics dataframe
+2023-05-27 06:00:28,442:INFO:Initializing SVM - Linear Kernel
+2023-05-27 06:00:28,442:INFO:Total runtime is 0.14730167786280313 minutes
+2023-05-27 06:00:28,447:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:00:28,447:INFO:Initializing create_model()
+2023-05-27 06:00:28,447:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=svm, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:00:28,447:INFO:Checking exceptions
+2023-05-27 06:00:28,447:INFO:Importing libraries
+2023-05-27 06:00:28,447:INFO:Copying training dataset
+2023-05-27 06:00:28,455:INFO:Defining folds
+2023-05-27 06:00:28,455:INFO:Declaring metric variables
+2023-05-27 06:00:28,460:INFO:Importing untrained model
+2023-05-27 06:00:28,465:INFO:SVM - Linear Kernel Imported successfully
+2023-05-27 06:00:28,474:INFO:Starting cross validation
+2023-05-27 06:00:28,475:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:00:28,798:WARNING:/usr/local/lib/python3.10/dist-packages/pycaret/internal/metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pycaret/internal/metrics.py", line 130, in _score
+    return super()._score(
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pycaret/internal/pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-05-27 06:00:28,799:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,802:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,804:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:28,805:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,812:WARNING:/usr/local/lib/python3.10/dist-packages/pycaret/internal/metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pycaret/internal/metrics.py", line 130, in _score
+    return super()._score(
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pycaret/internal/pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-05-27 06:00:28,813:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,816:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:28,818:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:28,819:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:29,223:WARNING:/usr/local/lib/python3.10/dist-packages/pycaret/internal/metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pycaret/internal/metrics.py", line 130, in _score
+    return super()._score(
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pycaret/internal/pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-05-27 06:00:29,224:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:29,226:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:29,227:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:29,228:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:29,233:INFO:Calculating mean and std
+2023-05-27 06:00:29,234:INFO:Creating metrics dataframe
+2023-05-27 06:00:29,247:INFO:Uploading results into container
+2023-05-27 06:00:29,247:INFO:Uploading model into container now
+2023-05-27 06:00:29,247:INFO:_master_model_container: 5
+2023-05-27 06:00:29,247:INFO:_display_container: 2
+2023-05-27 06:00:29,248:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=1620, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2023-05-27 06:00:29,248:INFO:create_model() successfully completed......................................
+2023-05-27 06:00:29,362:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:00:29,362:INFO:Creating metrics dataframe
+2023-05-27 06:00:29,371:INFO:Initializing Ridge Classifier
+2023-05-27 06:00:29,372:INFO:Total runtime is 0.1627878189086914 minutes
+2023-05-27 06:00:29,377:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:00:29,377:INFO:Initializing create_model()
+2023-05-27 06:00:29,377:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=ridge, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:00:29,377:INFO:Checking exceptions
+2023-05-27 06:00:29,377:INFO:Importing libraries
+2023-05-27 06:00:29,377:INFO:Copying training dataset
+2023-05-27 06:00:29,385:INFO:Defining folds
+2023-05-27 06:00:29,385:INFO:Declaring metric variables
+2023-05-27 06:00:29,392:INFO:Importing untrained model
+2023-05-27 06:00:29,397:INFO:Ridge Classifier Imported successfully
+2023-05-27 06:00:29,405:INFO:Starting cross validation
+2023-05-27 06:00:29,406:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:00:29,559:WARNING:/usr/local/lib/python3.10/dist-packages/pycaret/internal/metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pycaret/internal/metrics.py", line 130, in _score
+    return super()._score(
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pycaret/internal/pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-05-27 06:00:29,560:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:29,561:WARNING:/usr/local/lib/python3.10/dist-packages/pycaret/internal/metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pycaret/internal/metrics.py", line 130, in _score
+    return super()._score(
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pycaret/internal/pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-05-27 06:00:29,562:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:29,562:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:29,564:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:29,565:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:29,565:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:29,566:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:29,567:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:29,653:WARNING:/usr/local/lib/python3.10/dist-packages/pycaret/internal/metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pycaret/internal/metrics.py", line 130, in _score
+    return super()._score(
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pycaret/internal/pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-05-27 06:00:29,654:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:29,655:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:29,656:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:29,657:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:29,662:INFO:Calculating mean and std
+2023-05-27 06:00:29,664:INFO:Creating metrics dataframe
+2023-05-27 06:00:29,671:INFO:Uploading results into container
+2023-05-27 06:00:29,671:INFO:Uploading model into container now
+2023-05-27 06:00:29,672:INFO:_master_model_container: 6
+2023-05-27 06:00:29,672:INFO:_display_container: 2
+2023-05-27 06:00:29,672:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, positive=False, random_state=1620, solver='auto',
+                tol=0.0001)
+2023-05-27 06:00:29,672:INFO:create_model() successfully completed......................................
+2023-05-27 06:00:29,783:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:00:29,783:INFO:Creating metrics dataframe
+2023-05-27 06:00:29,795:INFO:Initializing Random Forest Classifier
+2023-05-27 06:00:29,796:INFO:Total runtime is 0.16985485951105753 minutes
+2023-05-27 06:00:29,804:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:00:29,804:INFO:Initializing create_model()
+2023-05-27 06:00:29,804:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=rf, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:00:29,804:INFO:Checking exceptions
+2023-05-27 06:00:29,804:INFO:Importing libraries
+2023-05-27 06:00:29,804:INFO:Copying training dataset
+2023-05-27 06:00:29,811:INFO:Defining folds
+2023-05-27 06:00:29,811:INFO:Declaring metric variables
+2023-05-27 06:00:29,817:INFO:Importing untrained model
+2023-05-27 06:00:29,824:INFO:Random Forest Classifier Imported successfully
+2023-05-27 06:00:29,833:INFO:Starting cross validation
+2023-05-27 06:00:29,834:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:00:31,270:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:31,272:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:31,274:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:31,275:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:31,319:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:31,322:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:31,324:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:31,325:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:32,377:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:32,380:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:32,381:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:32,383:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:32,391:INFO:Calculating mean and std
+2023-05-27 06:00:32,393:INFO:Creating metrics dataframe
+2023-05-27 06:00:32,405:INFO:Uploading results into container
+2023-05-27 06:00:32,406:INFO:Uploading model into container now
+2023-05-27 06:00:32,406:INFO:_master_model_container: 7
+2023-05-27 06:00:32,406:INFO:_display_container: 2
+2023-05-27 06:00:32,407:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=1620, verbose=0, warm_start=False)
+2023-05-27 06:00:32,407:INFO:create_model() successfully completed......................................
+2023-05-27 06:00:32,629:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:00:32,629:INFO:Creating metrics dataframe
+2023-05-27 06:00:32,665:INFO:Initializing Quadratic Discriminant Analysis
+2023-05-27 06:00:32,666:INFO:Total runtime is 0.21768844922383626 minutes
+2023-05-27 06:00:32,674:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:00:32,674:INFO:Initializing create_model()
+2023-05-27 06:00:32,674:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=qda, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:00:32,674:INFO:Checking exceptions
+2023-05-27 06:00:32,674:INFO:Importing libraries
+2023-05-27 06:00:32,674:INFO:Copying training dataset
+2023-05-27 06:00:32,688:INFO:Defining folds
+2023-05-27 06:00:32,688:INFO:Declaring metric variables
+2023-05-27 06:00:32,697:INFO:Importing untrained model
+2023-05-27 06:00:32,705:INFO:Quadratic Discriminant Analysis Imported successfully
+2023-05-27 06:00:32,717:INFO:Starting cross validation
+2023-05-27 06:00:32,719:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:00:32,912:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-05-27 06:00:32,913:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-05-27 06:00:33,025:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:33,026:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:33,028:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:33,029:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:33,030:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:33,031:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:33,031:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:33,032:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:33,090:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-05-27 06:00:33,157:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:33,159:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:33,161:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:33,162:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:33,171:INFO:Calculating mean and std
+2023-05-27 06:00:33,172:INFO:Creating metrics dataframe
+2023-05-27 06:00:33,182:INFO:Uploading results into container
+2023-05-27 06:00:33,183:INFO:Uploading model into container now
+2023-05-27 06:00:33,184:INFO:_master_model_container: 8
+2023-05-27 06:00:33,184:INFO:_display_container: 2
+2023-05-27 06:00:33,184:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2023-05-27 06:00:33,184:INFO:create_model() successfully completed......................................
+2023-05-27 06:00:33,335:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:00:33,335:INFO:Creating metrics dataframe
+2023-05-27 06:00:33,346:INFO:Initializing Ada Boost Classifier
+2023-05-27 06:00:33,346:INFO:Total runtime is 0.22903545697530112 minutes
+2023-05-27 06:00:33,351:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:00:33,351:INFO:Initializing create_model()
+2023-05-27 06:00:33,352:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=ada, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:00:33,352:INFO:Checking exceptions
+2023-05-27 06:00:33,352:INFO:Importing libraries
+2023-05-27 06:00:33,352:INFO:Copying training dataset
+2023-05-27 06:00:33,358:INFO:Defining folds
+2023-05-27 06:00:33,358:INFO:Declaring metric variables
+2023-05-27 06:00:33,366:INFO:Importing untrained model
+2023-05-27 06:00:33,372:INFO:Ada Boost Classifier Imported successfully
+2023-05-27 06:00:33,380:INFO:Starting cross validation
+2023-05-27 06:00:33,381:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:00:34,108:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:34,108:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:34,110:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:34,110:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:34,112:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:34,112:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:34,113:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:34,113:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:34,644:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:34,647:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:34,649:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:34,650:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:34,659:INFO:Calculating mean and std
+2023-05-27 06:00:34,661:INFO:Creating metrics dataframe
+2023-05-27 06:00:34,683:INFO:Uploading results into container
+2023-05-27 06:00:34,683:INFO:Uploading model into container now
+2023-05-27 06:00:34,684:INFO:_master_model_container: 9
+2023-05-27 06:00:34,684:INFO:_display_container: 2
+2023-05-27 06:00:34,684:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator='deprecated',
+                   estimator=None, learning_rate=1.0, n_estimators=50,
+                   random_state=1620)
+2023-05-27 06:00:34,684:INFO:create_model() successfully completed......................................
+2023-05-27 06:00:34,875:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:00:34,875:INFO:Creating metrics dataframe
+2023-05-27 06:00:34,896:INFO:Initializing Gradient Boosting Classifier
+2023-05-27 06:00:34,896:INFO:Total runtime is 0.2548601269721985 minutes
+2023-05-27 06:00:34,904:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:00:34,904:INFO:Initializing create_model()
+2023-05-27 06:00:34,904:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=gbc, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:00:34,904:INFO:Checking exceptions
+2023-05-27 06:00:34,904:INFO:Importing libraries
+2023-05-27 06:00:34,904:INFO:Copying training dataset
+2023-05-27 06:00:34,922:INFO:Defining folds
+2023-05-27 06:00:34,922:INFO:Declaring metric variables
+2023-05-27 06:00:34,934:INFO:Importing untrained model
+2023-05-27 06:00:34,945:INFO:Gradient Boosting Classifier Imported successfully
+2023-05-27 06:00:34,961:INFO:Starting cross validation
+2023-05-27 06:00:34,968:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:00:44,621:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:44,624:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:44,626:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:44,755:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:44,757:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:44,760:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:50,101:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:50,103:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:50,104:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:50,111:INFO:Calculating mean and std
+2023-05-27 06:00:50,112:INFO:Creating metrics dataframe
+2023-05-27 06:00:50,122:INFO:Uploading results into container
+2023-05-27 06:00:50,122:INFO:Uploading model into container now
+2023-05-27 06:00:50,123:INFO:_master_model_container: 10
+2023-05-27 06:00:50,123:INFO:_display_container: 2
+2023-05-27 06:00:50,123:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=1620, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2023-05-27 06:00:50,123:INFO:create_model() successfully completed......................................
+2023-05-27 06:00:50,246:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:00:50,246:INFO:Creating metrics dataframe
+2023-05-27 06:00:50,259:INFO:Initializing Linear Discriminant Analysis
+2023-05-27 06:00:50,259:INFO:Total runtime is 0.5109102765719096 minutes
+2023-05-27 06:00:50,266:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:00:50,266:INFO:Initializing create_model()
+2023-05-27 06:00:50,266:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=lda, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:00:50,266:INFO:Checking exceptions
+2023-05-27 06:00:50,266:INFO:Importing libraries
+2023-05-27 06:00:50,266:INFO:Copying training dataset
+2023-05-27 06:00:50,272:INFO:Defining folds
+2023-05-27 06:00:50,272:INFO:Declaring metric variables
+2023-05-27 06:00:50,280:INFO:Importing untrained model
+2023-05-27 06:00:50,286:INFO:Linear Discriminant Analysis Imported successfully
+2023-05-27 06:00:50,313:INFO:Starting cross validation
+2023-05-27 06:00:50,315:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:00:50,599:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:50,601:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:50,603:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:50,603:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:50,787:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:50,789:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:50,800:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:50,801:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:50,881:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:50,883:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:50,885:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:50,886:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:50,892:INFO:Calculating mean and std
+2023-05-27 06:00:50,894:INFO:Creating metrics dataframe
+2023-05-27 06:00:50,907:INFO:Uploading results into container
+2023-05-27 06:00:50,908:INFO:Uploading model into container now
+2023-05-27 06:00:50,908:INFO:_master_model_container: 11
+2023-05-27 06:00:50,908:INFO:_display_container: 2
+2023-05-27 06:00:50,909:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2023-05-27 06:00:50,909:INFO:create_model() successfully completed......................................
+2023-05-27 06:00:51,158:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:00:51,159:INFO:Creating metrics dataframe
+2023-05-27 06:00:51,191:INFO:Initializing Extra Trees Classifier
+2023-05-27 06:00:51,191:INFO:Total runtime is 0.5264441688855489 minutes
+2023-05-27 06:00:51,200:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:00:51,201:INFO:Initializing create_model()
+2023-05-27 06:00:51,201:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=et, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:00:51,201:INFO:Checking exceptions
+2023-05-27 06:00:51,201:INFO:Importing libraries
+2023-05-27 06:00:51,201:INFO:Copying training dataset
+2023-05-27 06:00:51,211:INFO:Defining folds
+2023-05-27 06:00:51,212:INFO:Declaring metric variables
+2023-05-27 06:00:51,230:INFO:Importing untrained model
+2023-05-27 06:00:51,253:INFO:Extra Trees Classifier Imported successfully
+2023-05-27 06:00:51,261:INFO:Starting cross validation
+2023-05-27 06:00:51,263:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:00:53,870:WARNING:/usr/local/lib/python3.10/dist-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 0.54s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-05-27 06:00:53,924:WARNING:/usr/local/lib/python3.10/dist-packages/pycaret/internal/pipeline.py:310: UserWarning: Persisting input arguments took 0.60s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-05-27 06:00:54,388:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:54,392:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:54,394:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:54,395:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:54,457:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:54,460:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:54,461:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:54,463:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:55,680:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:55,682:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:55,683:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:55,684:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:55,690:INFO:Calculating mean and std
+2023-05-27 06:00:55,695:INFO:Creating metrics dataframe
+2023-05-27 06:00:55,706:INFO:Uploading results into container
+2023-05-27 06:00:55,707:INFO:Uploading model into container now
+2023-05-27 06:00:55,707:INFO:_master_model_container: 12
+2023-05-27 06:00:55,707:INFO:_display_container: 2
+2023-05-27 06:00:55,708:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False)
+2023-05-27 06:00:55,708:INFO:create_model() successfully completed......................................
+2023-05-27 06:00:55,894:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:00:55,894:INFO:Creating metrics dataframe
+2023-05-27 06:00:55,920:INFO:Initializing Extreme Gradient Boosting
+2023-05-27 06:00:55,920:INFO:Total runtime is 0.6052580118179322 minutes
+2023-05-27 06:00:55,930:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:00:55,930:INFO:Initializing create_model()
+2023-05-27 06:00:55,931:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=xgboost, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:00:55,931:INFO:Checking exceptions
+2023-05-27 06:00:55,931:INFO:Importing libraries
+2023-05-27 06:00:55,931:INFO:Copying training dataset
+2023-05-27 06:00:55,947:INFO:Defining folds
+2023-05-27 06:00:55,947:INFO:Declaring metric variables
+2023-05-27 06:00:55,958:INFO:Importing untrained model
+2023-05-27 06:00:55,976:INFO:Extreme Gradient Boosting Imported successfully
+2023-05-27 06:00:55,990:INFO:Starting cross validation
+2023-05-27 06:00:55,992:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:00:59,548:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:59,551:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:59,552:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:59,553:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:59,561:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:59,563:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:00:59,565:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:00:59,566:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:01,647:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:01,649:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:01,650:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:01:01,651:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:01,657:INFO:Calculating mean and std
+2023-05-27 06:01:01,659:INFO:Creating metrics dataframe
+2023-05-27 06:01:01,667:INFO:Uploading results into container
+2023-05-27 06:01:01,668:INFO:Uploading model into container now
+2023-05-27 06:01:01,669:INFO:_master_model_container: 13
+2023-05-27 06:01:01,669:INFO:_display_container: 2
+2023-05-27 06:01:01,670:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, gpu_id=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              n_estimators=100, n_jobs=-1, num_parallel_tree=None,
+              objective='binary:logistic', predictor=None, ...)
+2023-05-27 06:01:01,670:INFO:create_model() successfully completed......................................
+2023-05-27 06:01:01,805:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:01:01,805:INFO:Creating metrics dataframe
+2023-05-27 06:01:01,817:INFO:Initializing Light Gradient Boosting Machine
+2023-05-27 06:01:01,817:INFO:Total runtime is 0.7035486419995626 minutes
+2023-05-27 06:01:01,824:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:01:01,824:INFO:Initializing create_model()
+2023-05-27 06:01:01,824:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=lightgbm, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:01:01,824:INFO:Checking exceptions
+2023-05-27 06:01:01,824:INFO:Importing libraries
+2023-05-27 06:01:01,824:INFO:Copying training dataset
+2023-05-27 06:01:01,830:INFO:Defining folds
+2023-05-27 06:01:01,830:INFO:Declaring metric variables
+2023-05-27 06:01:01,835:INFO:Importing untrained model
+2023-05-27 06:01:01,840:INFO:Light Gradient Boosting Machine Imported successfully
+2023-05-27 06:01:01,848:INFO:Starting cross validation
+2023-05-27 06:01:01,849:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:01:04,818:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:04,820:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:04,821:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:01:04,822:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:04,856:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:04,862:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:04,863:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:01:04,864:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:06,977:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:06,981:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:06,983:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:01:06,985:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:06,996:INFO:Calculating mean and std
+2023-05-27 06:01:06,997:INFO:Creating metrics dataframe
+2023-05-27 06:01:07,013:INFO:Uploading results into container
+2023-05-27 06:01:07,013:INFO:Uploading model into container now
+2023-05-27 06:01:07,014:INFO:_master_model_container: 14
+2023-05-27 06:01:07,014:INFO:_display_container: 2
+2023-05-27 06:01:07,014:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=1620, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2023-05-27 06:01:07,014:INFO:create_model() successfully completed......................................
+2023-05-27 06:01:07,167:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:01:07,168:INFO:Creating metrics dataframe
+2023-05-27 06:01:07,186:INFO:Initializing CatBoost Classifier
+2023-05-27 06:01:07,187:INFO:Total runtime is 0.7930377682050069 minutes
+2023-05-27 06:01:07,192:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:01:07,192:INFO:Initializing create_model()
+2023-05-27 06:01:07,192:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=catboost, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:01:07,192:INFO:Checking exceptions
+2023-05-27 06:01:07,192:INFO:Importing libraries
+2023-05-27 06:01:07,192:INFO:Copying training dataset
+2023-05-27 06:01:07,208:INFO:Defining folds
+2023-05-27 06:01:07,209:INFO:Declaring metric variables
+2023-05-27 06:01:07,213:INFO:Importing untrained model
+2023-05-27 06:01:07,222:INFO:CatBoost Classifier Imported successfully
+2023-05-27 06:01:07,235:INFO:Starting cross validation
+2023-05-27 06:01:07,236:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:01:29,326:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:29,329:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:29,331:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:01:29,337:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:30,146:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:30,148:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:30,149:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:01:30,150:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:43,435:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:43,438:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:43,439:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:01:43,440:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:43,454:INFO:Calculating mean and std
+2023-05-27 06:01:43,456:INFO:Creating metrics dataframe
+2023-05-27 06:01:43,477:INFO:Uploading results into container
+2023-05-27 06:01:43,477:INFO:Uploading model into container now
+2023-05-27 06:01:43,478:INFO:_master_model_container: 15
+2023-05-27 06:01:43,478:INFO:_display_container: 2
+2023-05-27 06:01:43,478:INFO:<catboost.core.CatBoostClassifier object at 0x7fc35559cdc0>
+2023-05-27 06:01:43,478:INFO:create_model() successfully completed......................................
+2023-05-27 06:01:43,642:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:01:43,642:INFO:Creating metrics dataframe
+2023-05-27 06:01:43,661:INFO:Initializing Dummy Classifier
+2023-05-27 06:01:43,661:INFO:Total runtime is 1.400953209400177 minutes
+2023-05-27 06:01:43,666:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:01:43,666:INFO:Initializing create_model()
+2023-05-27 06:01:43,666:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=dummy, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35307aa10>, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:01:43,666:INFO:Checking exceptions
+2023-05-27 06:01:43,666:INFO:Importing libraries
+2023-05-27 06:01:43,666:INFO:Copying training dataset
+2023-05-27 06:01:43,674:INFO:Defining folds
+2023-05-27 06:01:43,674:INFO:Declaring metric variables
+2023-05-27 06:01:43,679:INFO:Importing untrained model
+2023-05-27 06:01:43,694:INFO:Dummy Classifier Imported successfully
+2023-05-27 06:01:43,709:INFO:Starting cross validation
+2023-05-27 06:01:43,710:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:01:44,005:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:44,008:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:44,010:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:01:44,011:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:44,124:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:44,127:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:44,141:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:01:44,143:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:44,217:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:44,220:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:44,221:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:01:44,222:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:44,235:INFO:Calculating mean and std
+2023-05-27 06:01:44,236:INFO:Creating metrics dataframe
+2023-05-27 06:01:44,270:INFO:Uploading results into container
+2023-05-27 06:01:44,271:INFO:Uploading model into container now
+2023-05-27 06:01:44,271:INFO:_master_model_container: 16
+2023-05-27 06:01:44,271:INFO:_display_container: 2
+2023-05-27 06:01:44,272:INFO:DummyClassifier(constant=None, random_state=1620, strategy='prior')
+2023-05-27 06:01:44,272:INFO:create_model() successfully completed......................................
+2023-05-27 06:01:44,622:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:01:44,622:INFO:Creating metrics dataframe
+2023-05-27 06:01:44,677:INFO:Initializing create_model()
+2023-05-27 06:01:44,677:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:01:44,677:INFO:Checking exceptions
+2023-05-27 06:01:44,681:INFO:Importing libraries
+2023-05-27 06:01:44,681:INFO:Copying training dataset
+2023-05-27 06:01:44,690:INFO:Defining folds
+2023-05-27 06:01:44,690:INFO:Declaring metric variables
+2023-05-27 06:01:44,690:INFO:Importing untrained model
+2023-05-27 06:01:44,690:INFO:Declaring custom model
+2023-05-27 06:01:44,691:INFO:Extra Trees Classifier Imported successfully
+2023-05-27 06:01:44,692:INFO:Cross validation set to False
+2023-05-27 06:01:44,692:INFO:Fitting Model
+2023-05-27 06:01:46,559:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False)
+2023-05-27 06:01:46,559:INFO:create_model() successfully completed......................................
+2023-05-27 06:01:47,215:INFO:_master_model_container: 16
+2023-05-27 06:01:47,216:INFO:_display_container: 2
+2023-05-27 06:01:47,217:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False)
+2023-05-27 06:01:47,217:INFO:compare_models() successfully completed......................................
+2023-05-27 06:01:47,219:INFO:Initializing tune_model()
+2023-05-27 06:01:47,219:INFO:tune_model(estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False), fold=None, round=4, n_iter=10, custom_grid=None, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>)
+2023-05-27 06:01:47,219:INFO:Checking exceptions
+2023-05-27 06:01:47,278:INFO:Copying training dataset
+2023-05-27 06:01:47,284:INFO:Checking base model
+2023-05-27 06:01:47,285:INFO:Base model : Extra Trees Classifier
+2023-05-27 06:01:47,306:INFO:Declaring metric variables
+2023-05-27 06:01:47,317:INFO:Defining Hyperparameters
+2023-05-27 06:01:47,659:INFO:Tuning with n_jobs=-1
+2023-05-27 06:01:47,659:INFO:Initializing RandomizedSearchCV
+2023-05-27 06:01:58,873:INFO:best_params: {'actual_estimator__n_estimators': 10, 'actual_estimator__min_samples_split': 7, 'actual_estimator__min_samples_leaf': 6, 'actual_estimator__min_impurity_decrease': 0, 'actual_estimator__max_features': 'sqrt', 'actual_estimator__max_depth': 11, 'actual_estimator__criterion': 'gini', 'actual_estimator__class_weight': {}, 'actual_estimator__bootstrap': False}
+2023-05-27 06:01:58,875:INFO:Hyperparameter search completed
+2023-05-27 06:01:58,876:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:01:58,877:INFO:Initializing create_model()
+2023-05-27 06:01:58,877:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fc35c0f1930>, model_only=True, return_train_score=False, kwargs={'n_estimators': 10, 'min_samples_split': 7, 'min_samples_leaf': 6, 'min_impurity_decrease': 0, 'max_features': 'sqrt', 'max_depth': 11, 'criterion': 'gini', 'class_weight': {}, 'bootstrap': False})
+2023-05-27 06:01:58,877:INFO:Checking exceptions
+2023-05-27 06:01:58,877:INFO:Importing libraries
+2023-05-27 06:01:58,877:INFO:Copying training dataset
+2023-05-27 06:01:58,884:INFO:Defining folds
+2023-05-27 06:01:58,884:INFO:Declaring metric variables
+2023-05-27 06:01:58,889:INFO:Importing untrained model
+2023-05-27 06:01:58,889:INFO:Declaring custom model
+2023-05-27 06:01:58,893:INFO:Extra Trees Classifier Imported successfully
+2023-05-27 06:01:58,901:INFO:Starting cross validation
+2023-05-27 06:01:58,903:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:01:59,166:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:59,179:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:59,181:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:01:59,182:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:59,185:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:59,193:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:59,195:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:01:59,196:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:59,431:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:59,433:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:59,435:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:01:59,435:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:01:59,443:INFO:Calculating mean and std
+2023-05-27 06:01:59,444:INFO:Creating metrics dataframe
+2023-05-27 06:01:59,467:INFO:Finalizing model
+2023-05-27 06:01:59,580:INFO:Uploading results into container
+2023-05-27 06:01:59,585:INFO:Uploading model into container now
+2023-05-27 06:01:59,586:INFO:_master_model_container: 17
+2023-05-27 06:01:59,586:INFO:_display_container: 3
+2023-05-27 06:01:59,586:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight={},
+                     criterion='gini', max_depth=11, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0, min_samples_leaf=6,
+                     min_samples_split=7, min_weight_fraction_leaf=0.0,
+                     n_estimators=10, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False)
+2023-05-27 06:01:59,586:INFO:create_model() successfully completed......................................
+2023-05-27 06:01:59,752:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:01:59,752:INFO:choose_better activated
+2023-05-27 06:01:59,759:INFO:SubProcess create_model() called ==================================
+2023-05-27 06:01:59,760:INFO:Initializing create_model()
+2023-05-27 06:01:59,760:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-05-27 06:01:59,760:INFO:Checking exceptions
+2023-05-27 06:01:59,762:INFO:Importing libraries
+2023-05-27 06:01:59,762:INFO:Copying training dataset
+2023-05-27 06:01:59,768:INFO:Defining folds
+2023-05-27 06:01:59,768:INFO:Declaring metric variables
+2023-05-27 06:01:59,768:INFO:Importing untrained model
+2023-05-27 06:01:59,768:INFO:Declaring custom model
+2023-05-27 06:01:59,769:INFO:Extra Trees Classifier Imported successfully
+2023-05-27 06:01:59,769:INFO:Starting cross validation
+2023-05-27 06:01:59,770:INFO:Cross validating with StratifiedKFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2023-05-27 06:02:00,515:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:02:00,517:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:02:00,518:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:02:00,534:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:02:00,749:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:02:00,751:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:02:00,758:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:02:00,759:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:02:01,180:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:02:01,184:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:02:01,186:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-05-27 06:02:01,187:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-05-27 06:02:01,199:INFO:Calculating mean and std
+2023-05-27 06:02:01,200:INFO:Creating metrics dataframe
+2023-05-27 06:02:01,203:INFO:Finalizing model
+2023-05-27 06:02:01,421:INFO:Uploading results into container
+2023-05-27 06:02:01,422:INFO:Uploading model into container now
+2023-05-27 06:02:01,423:INFO:_master_model_container: 18
+2023-05-27 06:02:01,423:INFO:_display_container: 4
+2023-05-27 06:02:01,423:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False)
+2023-05-27 06:02:01,423:INFO:create_model() successfully completed......................................
+2023-05-27 06:02:01,569:INFO:SubProcess create_model() end ==================================
+2023-05-27 06:02:01,569:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False) result for Accuracy is 0.6387
+2023-05-27 06:02:01,570:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight={},
+                     criterion='gini', max_depth=11, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0, min_samples_leaf=6,
+                     min_samples_split=7, min_weight_fraction_leaf=0.0,
+                     n_estimators=10, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False) result for Accuracy is 0.5569
+2023-05-27 06:02:01,571:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False) is best model
+2023-05-27 06:02:01,571:INFO:choose_better completed
+2023-05-27 06:02:01,572:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2023-05-27 06:02:01,585:INFO:_master_model_container: 18
+2023-05-27 06:02:01,586:INFO:_display_container: 3
+2023-05-27 06:02:01,586:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False)
+2023-05-27 06:02:01,586:INFO:tune_model() successfully completed......................................
+2023-05-27 06:02:03,269:INFO:Initializing predict_model()
+2023-05-27 06:02:03,269:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fc352f7b640>)
+2023-05-27 06:02:03,270:INFO:Checking exceptions
+2023-05-27 06:02:03,270:INFO:Preloading libraries
+2023-05-27 06:02:03,398:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+2023-05-27 06:02:03,398:WARNING:  warnings.warn(
+2023-05-27 06:02:03,400:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+2023-05-27 06:02:03,400:WARNING:  warnings.warn(
+2023-05-27 06:02:03,401:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+2023-05-27 06:02:03,401:WARNING:  _warn_prf(average, modifier, msg_start, len(result))
+2023-05-27 06:02:03,401:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 9) is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+2023-05-27 06:02:03,401:WARNING:  warnings.warn(
+2023-05-27 06:02:03,586:INFO:Initializing save_model()
+2023-05-27 06:02:03,586:INFO:save_model(model=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1620, verbose=0, warm_start=False), model_name=wine_pycaret_model, prep_pipe_=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                                    transformer=OrdinalEncoder(cols=['type'],
+                                                               drop_invariant=False,
+                                                               handle_missing='return_nan',
+                                                               handle_unknown='value',
+                                                               mapping=[{'col': 'type',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': red      0
+white    1
+NaN     -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2023-05-27 06:02:03,587:INFO:Adding model into prep_pipe
+2023-05-27 06:02:03,693:INFO:wine_pycaret_model.pkl saved in current working directory
+2023-05-27 06:02:03,708:INFO:Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=1620,
+                                      verbose=0, warm_start=False))],
+         verbose=False)
+2023-05-27 06:02:03,708:INFO:save_model() successfully completed......................................
+2023-05-27 06:02:03,860:INFO:Initializing load_model()
+2023-05-27 06:02:03,860:INFO:load_model(model_name=wine_pycaret_model, platform=None, authentication=None, verbose=True)
+2023-05-27 06:04:25,441:INFO:Initializing evaluate_model()
+2023-05-27 06:04:25,442:INFO:evaluate_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=1620,
+                                      verbose=0, warm_start=False))],
+         verbose=False), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2023-05-27 06:04:25,489:INFO:Initializing plot_model()
+2023-05-27 06:04:25,489:INFO:plot_model(plot=pipeline, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=1620,
+                                      verbose=0, warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, system=True)
+2023-05-27 06:04:25,489:INFO:Checking exceptions
+2023-05-27 06:04:25,509:INFO:Preloading libraries
+2023-05-27 06:04:25,619:INFO:Copying training dataset
+2023-05-27 06:04:25,620:INFO:Plot type: pipeline
+2023-05-27 06:04:25,980:INFO:Visual Rendered Successfully
+2023-05-27 06:04:26,152:INFO:plot_model() successfully completed......................................
+2023-05-27 06:05:53,736:INFO:Initializing plot_model()
+2023-05-27 06:05:53,736:INFO:plot_model(plot=manifold, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=1620,
+                                      verbose=0, warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, system=True)
+2023-05-27 06:05:53,736:INFO:Checking exceptions
+2023-05-27 06:05:54,561:INFO:Initializing plot_model()
+2023-05-27 06:05:54,561:INFO:plot_model(plot=feature_all, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=1620,
+                                      verbose=0, warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, system=True)
+2023-05-27 06:05:54,561:INFO:Checking exceptions
+2023-05-27 06:05:54,581:INFO:Preloading libraries
+2023-05-27 06:05:54,619:INFO:Copying training dataset
+2023-05-27 06:05:54,619:INFO:Plot type: feature_all
+2023-05-27 06:05:54,630:WARNING:No coef_ found. Trying feature_importances_
+2023-05-27 06:05:54,839:INFO:Visual Rendered Successfully
+2023-05-27 06:05:54,957:INFO:plot_model() successfully completed......................................
+2023-05-27 06:05:55,769:INFO:Initializing plot_model()
+2023-05-27 06:05:55,769:INFO:plot_model(plot=parameter, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=1620,
+                                      verbose=0, warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, system=True)
+2023-05-27 06:05:55,769:INFO:Checking exceptions
+2023-05-27 06:05:55,787:INFO:Preloading libraries
+2023-05-27 06:05:55,826:INFO:Copying training dataset
+2023-05-27 06:05:55,826:INFO:Plot type: parameter
+2023-05-27 06:05:55,830:INFO:Visual Rendered Successfully
+2023-05-27 06:05:55,957:INFO:plot_model() successfully completed......................................
+2023-05-27 06:05:56,813:INFO:Initializing plot_model()
+2023-05-27 06:05:56,813:INFO:plot_model(plot=calibration, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=1620,
+                                      verbose=0, warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, system=True)
+2023-05-27 06:05:56,813:INFO:Checking exceptions
+2023-05-27 06:05:57,482:INFO:Initializing plot_model()
+2023-05-27 06:05:57,482:INFO:plot_model(plot=boundary, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=1620,
+                                      verbose=0, warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, system=True)
+2023-05-27 06:05:57,482:INFO:Checking exceptions
+2023-05-27 06:05:57,500:INFO:Preloading libraries
+2023-05-27 06:05:57,536:INFO:Copying training dataset
+2023-05-27 06:05:57,537:INFO:Plot type: boundary
+2023-05-27 06:05:57,557:INFO:Fitting StandardScaler()
+2023-05-27 06:05:57,562:INFO:Fitting PCA()
+2023-05-27 06:05:57,604:INFO:Fitting Model
+2023-05-27 06:05:58,614:WARNING:/usr/local/lib/python3.10/dist-packages/yellowbrick/contrib/classifier/boundaries.py:467: UserWarning: You passed a edgecolor/edgecolors ('black') for an unfilled marker ('+').  Matplotlib is ignoring the edgecolor in favor of the facecolor.  This behavior may change in the future.
+2023-05-27 06:05:58,614:WARNING:  self.ax.scatter(
+2023-05-27 06:05:59,540:INFO:Visual Rendered Successfully
+2023-05-27 06:05:59,708:INFO:plot_model() successfully completed......................................
+2023-05-27 06:06:01,083:INFO:Initializing plot_model()
+2023-05-27 06:06:01,083:INFO:plot_model(plot=confusion_matrix, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=1620,
+                                      verbose=0, warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, system=True)
+2023-05-27 06:06:01,083:INFO:Checking exceptions
+2023-05-27 06:06:01,106:INFO:Preloading libraries
+2023-05-27 06:06:01,158:INFO:Copying training dataset
+2023-05-27 06:06:01,158:INFO:Plot type: confusion_matrix
+2023-05-27 06:06:01,223:INFO:Fitting Model
+2023-05-27 06:06:01,223:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but ExtraTreesClassifier was fitted with feature names
+2023-05-27 06:06:01,223:WARNING:  warnings.warn(
+2023-05-27 06:06:01,224:INFO:Scoring test/hold-out set
+2023-05-27 06:06:01,708:INFO:Visual Rendered Successfully
+2023-05-27 06:06:01,872:INFO:plot_model() successfully completed......................................
+2023-05-27 06:06:02,867:INFO:Initializing plot_model()
+2023-05-27 06:06:02,867:INFO:plot_model(plot=dimension, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=1620,
+                                      verbose=0, warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, system=True)
+2023-05-27 06:06:02,867:INFO:Checking exceptions
+2023-05-27 06:06:02,894:INFO:Preloading libraries
+2023-05-27 06:06:02,949:INFO:Copying training dataset
+2023-05-27 06:06:02,949:INFO:Plot type: dimension
+2023-05-27 06:06:03,007:INFO:Fitting StandardScaler()
+2023-05-27 06:06:03,026:INFO:Fitting PCA()
+2023-05-27 06:06:03,182:INFO:Fitting & Transforming Model
+2023-05-27 06:06:03,561:INFO:Visual Rendered Successfully
+2023-05-27 06:06:03,700:INFO:plot_model() successfully completed......................................
+2023-05-27 06:06:04,758:INFO:Initializing plot_model()
+2023-05-27 06:06:04,758:INFO:plot_model(plot=threshold, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=1620,
+                                      verbose=0, warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, system=True)
+2023-05-27 06:06:04,758:INFO:Checking exceptions
+2023-05-27 06:06:05,772:INFO:Initializing plot_model()
+2023-05-27 06:06:05,772:INFO:plot_model(plot=learning, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=1620,
+                                      verbose=0, warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, system=True)
+2023-05-27 06:06:05,772:INFO:Checking exceptions
+2023-05-27 06:06:05,792:INFO:Preloading libraries
+2023-05-27 06:06:05,829:INFO:Copying training dataset
+2023-05-27 06:06:05,829:INFO:Plot type: learning
+2023-05-27 06:06:05,862:INFO:Fitting Model
+2023-05-27 06:06:13,121:INFO:Visual Rendered Successfully
+2023-05-27 06:06:13,240:INFO:plot_model() successfully completed......................................
+2023-05-27 06:06:14,153:INFO:Initializing plot_model()
+2023-05-27 06:06:14,153:INFO:plot_model(plot=dimension, fold=StratifiedKFold(n_splits=3, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['fixed acidity',
+                                             'volatile acidity', 'citric acid',
+                                             'residual sugar', 'chlorides',
+                                             'free sulfur dioxide',
+                                             'total sulfur dioxide', 'density',
+                                             'pH'...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=1620,
+                                      verbose=0, warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc35c0f1d50>, system=True)
+2023-05-27 06:06:14,153:INFO:Checking exceptions
+2023-05-27 06:06:14,171:INFO:Preloading libraries
+2023-05-27 06:06:14,219:INFO:Copying training dataset
+2023-05-27 06:06:14,220:INFO:Plot type: dimension
+2023-05-27 06:06:14,234:INFO:Fitting StandardScaler()
+2023-05-27 06:06:14,248:INFO:Fitting PCA()
+2023-05-27 06:06:14,397:INFO:Fitting & Transforming Model
+2023-05-27 06:06:14,904:INFO:Visual Rendered Successfully
+2023-05-27 06:06:15,070:INFO:plot_model() successfully completed......................................
