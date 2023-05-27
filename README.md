@@ -7,11 +7,10 @@
 ## ✏️ Machine Learning
 ### 04_Machine Learning ➖ 해당저장소로 👉 [이동하기](04_ML)
 ● ML_KNN 사용하기 / 데이터 셋 iris 🔗 [코드](./04_ML/ml_basic(KNN).ipynb)
-
+● pycaret 실습 / 데이터 셋 wine 🔗 [저장소]()
 #### ● berast_cancer 데이터 셋을 이용한 머신러닝 알고리즘 활용
 > 1. DecisionTree 🔗 [코드](./04_ML/ML_DecisionTree(cancer).ipynb)
 > 2. Voting, Bagging 🔗 [코드](./04_ML/ML_Voting_Bagging(cancer).ipynb)
-> 3. pycaret 기본 활용 🔗 [코드](./04_ML/ML_pycaret사용하기(breast_cancer).ipynb)
-
+> 3. pycaret 기본 활용 🔗 [저장소](.AI_study/tree/main/04_ML/ML_pycaret(breast_cancer)
 
 ## ✏️ Deep Learning
