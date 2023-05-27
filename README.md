@@ -11,7 +11,7 @@
 #### ● berast_cancer 데이터 셋을 이용한 머신러닝 알고리즘 활용
 > 1. DecisionTree 🔗 [코드](./04_ML/ML_DecisionTree(cancer).ipynb)
 > 2. Voting, Bagging 🔗 [코드](./04_ML/ML_Voting_Bagging(cancer).ipynb)
-> 3. pycaret 기본 활용 🔗[코드]((./04_ML/ML_pycaret(breast_cancer)/ML_pycaret사용하기(breast_cancer).ipynb)
+> 3. pycaret 기본 활용 🔗[코드](./04_ML/ML_pycaret(breast_cancer)/ML_pycaret사용하기(breast_cancer).ipynb)
 📁[저장소](./04_ML/ML_pycaret(breast_cancer)) 
 
 ## ✏️ Deep Learning
