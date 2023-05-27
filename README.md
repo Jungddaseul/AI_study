@@ -6,5 +6,5 @@
 
 ## ✏️ Machine Learning
 > #### 04_Machine Learning ➖ 해당저장소로 👉 [이동하기](04_ML)
-> >ㄹㄹ
+> ● ML_KNN 사용하기 [코드](../04_ML/ml_basic(KNN).ipynb)
 ## ✏️ Deep Learning
