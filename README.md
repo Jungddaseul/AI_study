@@ -11,6 +11,9 @@
 ● pycaret 실습 / 데이터 셋 wine 🔗[코드](./04_ML/ML_pycaret(wine)/ML_pycaret활용(wine).ipynb)
 📁[저장소](./04_ML/ML_pycaret(wine)) 
 
+● pycaret 실습 / 데이터 셋 titanic 🔗[코드](./04_ML/titanic_data/titanic_pycaret01.ipynb)
+📁[저장소](./04_ML/titanic_data) 
+
 #### ● berast_cancer 데이터 셋을 이용한 머신러닝 알고리즘 활용
 > 1. DecisionTree 🔗 [코드](./04_ML/ML_DecisionTree(cancer).ipynb)
 > 2. Voting, Bagging 🔗 [코드](./04_ML/ML_Voting_Bagging(cancer).ipynb)
