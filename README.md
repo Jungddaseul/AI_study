@@ -19,5 +19,6 @@
 > 2. Voting, Bagging 🔗 [코드](./04_ML/ML_Voting_Bagging(cancer).ipynb)
 > 3. pycaret 기본 활용 🔗[코드](./04_ML/ML_pycaret(breast_cancer)/ML_pycaret사용하기(breast_cancer).ipynb)
 📁[저장소](./04_ML/ML_pycaret(breast_cancer)) 
+> 4. flask.app 활용 📁[저장소](./04_ML/flask_basic)) 
 
 ## ✏️ Deep Learning
