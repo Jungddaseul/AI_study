@@ -22,4 +22,4 @@
 > 4. flask.app 활용 📁[저장소](./04_ML/flask_basic)) 
 
 ## ✏️ Deep Learning
-### 05 DL(PyTorch) ➖ 해당저장소로 👉 [이동하기](https://github.com/Jungddaseul/AI_study/tree/main/DL(PyTorch))
+### 05 DL(PyTorch) ➖ 해당저장소로 👉 [이동하기](https://github.com/Jungddaseul/AI_study/tree/main/05_DL(PyTorch))
